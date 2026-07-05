@@ -1,0 +1,135 @@
+qa-testing-lab/
+├── automation/
+│   ├── web/
+│   ├── api/
+│   ├── mobile/
+│   └── shared/           # common utilities, helpers, page objects, etc.
+│
+├── manual-testing/
+│   ├── test-cases/
+│   ├── checklists/
+│   ├── templates/
+│   └── examples/
+│
+├── game-testing/
+│   ├── test-plans/
+│   ├── test-cases/
+│   ├── automation/       # game-specific automation only
+│   ├── tools/
+│   ├── sample-games/     # small samples or references
+│   └── assets/           # screenshots, videos, logs, etc.
+│
+├── tools/                # General purpose tools/scripts (not game-specific)
+│   ├── scripts/
+│   └── utils/
+│
+├── docs/
+│   ├── methodology.md
+│   ├── best-practices.md
+│   ├── glossary.md
+│   ├── templates/
+│   └── README.md
+│
+├── reports/
+│   └── archives/         # Consider using GitHub Projects + Wiki for active reports
+│
+├── test-data/
+│   ├── mock/
+│   ├── seeds/
+│   └── fixtures/
+│
+├── configs/
+├── .github/
+│   ├── workflows/
+│   ├── ISSUE_TEMPLATE/
+│   └── PULL_REQUEST_TEMPLATE/
+│
+├── screenshots/          # optional but very useful for QA
+├── .gitignore
+├── LICENSE
+└── README.md
+
+
+
+
+---
+
+
+qa-testing-lab/
+├── automation/
+│   ├── web/                  # Web automation (Selenium, Playwright, Cypress, etc.)
+│   │   ├── tests/            # Actual test scripts
+│   │   ├── page-objects/     # Page Object Model classes
+│   │   ├── locators/         # All element locators (if not using POM)
+│   │   ├── utils/            # Web-specific helpers
+│   │   └── reports/          # Test run reports (HTML, screenshots)
+│   │
+│   ├── api/                  # API testing (RestAssured, Postman, Supertest, etc.)
+│   │   ├── tests/            # API test cases
+│   │   ├── collections/      # Postman/Newman collections
+│   │   ├── schemas/          # JSON schemas for validation
+│   │   └── utils/            # API helpers, auth, request builders
+│   │
+│   ├── mobile/               # Mobile automation (Appium, Detox, etc.)
+│   │   ├── android/          # Android-specific tests
+│   │   ├── ios/              # iOS-specific tests
+│   │   └── utils/            # Mobile-specific helpers
+│   │
+│   └── shared/               # Common utilities used across all automation
+│       ├── helpers/          # Reusable functions
+│       ├── fixtures/         # Test data fixtures
+│       ├── page-objects/     # Shared page objects
+│       ├── utilities/        # Common utils (logging, reporting, wait helpers)
+│       └── config/           # Shared configuration
+│
+├── manual-testing/
+│   ├── test-cases/           # Detailed manual test cases (usually .md or .xlsx)
+│   ├── checklists/           # Quick checklists (smoke, regression, sanity, etc.)
+│   ├── templates/            # Reusable templates (test case, bug report, etc.)
+│   └── examples/             # Example test cases & exploratory testing sessions
+│
+├── game-testing/
+│   ├── test-plans/           # Game test plans, feature testing strategies
+│   ├── test-cases/           # Game-specific test cases (functionality, balance, UX)
+│   ├── automation/           # Game-specific automation only (Unity, Unreal, bots)
+│   ├── tools/                # Game testing tools (save editors, cheat engines, etc.)
+│   ├── sample-games/         # Demo or small games for practice & tool testing
+│   └── assets/               # Screenshots, videos, logs, crash dumps, performance data
+│
+├── tools/                    # General purpose tools/scripts (not game-specific)
+│   ├── scripts/              # Automation helper scripts, data generators, parsers
+│   └── utils/                # Standalone utilities & small tools
+│
+├── docs/
+│   ├── methodology.md        # QA process, testing strategy, testing pyramid
+│   ├── best-practices.md     # Standards for automation & manual testing
+│   ├── glossary.md           # Common QA and project-specific terms
+│   ├── templates/            # All document templates
+│   └── README.md             # Documentation index
+│
+├── reports/                  # Test execution reports and results
+│   └── archives/             # Archived reports (use GitHub Projects for active ones)
+│
+├── test-data/
+│   ├── mock/                 # Mock data and responses
+│   ├── seeds/                # Database seed files
+│   └── fixtures/             # Reusable test data files (JSON, CSV, etc.)
+│
+├── configs/                  # Configuration files
+│   ├── environments/         # dev, staging, prod configs
+│   ├── browsers/             # Browser capabilities
+│   └── tools/                # Tool-specific configurations
+│
+├── .github/
+│   ├── workflows/            # GitHub Actions CI/CD pipelines
+│   ├── ISSUE_TEMPLATE/       # Issue templates (bug, task, etc.)
+│   └── PULL_REQUEST_TEMPLATE/ # PR template
+│
+├── screenshots/              # Visual evidence & bug reproduction
+│   ├── bugs/                 # Screenshots of found bugs
+│   ├── baselines/            # Visual regression testing baselines
+│   └── features/             # Feature walkthrough screenshots
+│
+├── .gitignore
+├── LICENSE
+└── README.md                 # Main repository documentation
